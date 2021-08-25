@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blablabla</title>
+</head>
+
+<style>
+    p {
+        color: purple;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    p:hover {
+        color: orange;
+        font-size: 24px;
+    }
+
+    button {
+        background-color: blue;
+        color: lightblue;
+        width: 200px;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    img {
+        width: 50%;
+        display: none;
+    }
+</style>
+
+<script>
+    function cheese() {
+        var chickenWingsImage = document.getElementById('chicken-wings');
+        if (chickenWingsImage.style.display == 'none') {
+            // show the image
+            chickenWingsImage.style.display = 'block';
+        } else {
+            // hide the image
+            chickenWingsImage.style.display = 'none';
+        }
+    }
+</script>
+<body>
+    <h1>Hi! This is primary activites !☺☻</h1>
+
+    <p>bla bla bla bla bla</p>
+
+    <a href="https://churchofjesuschrist.org">get a new life</a>
+
+    <br>
+
+    <hr>
+
+    <img id="chicken-wings" src="https://hips.hearstapps.com/hmg-prod/images/classic-buffalo-wings-horizontal-279-1547506077.jpg" alt="chicken wings picture">
+
+    <br>
+
+    <button type="button" onclick="cheese()">Chicken wings</button>
+</body>
+</html>
